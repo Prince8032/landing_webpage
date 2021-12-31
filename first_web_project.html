@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>know me? dance</title>
+</head>
+<!-- here we include css file -->
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> -->
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        /* here we had added the background-image: of the body */
+        background: url('img/dance\ wallpaper.jpg');
+        /* height: 5000em; */
+        /* font-family: 'Fredoka One', cursive; */
+
+    }
+
+    .left {
+        color: white;
+        display: inline-block;
+        /* border: 2px solid green; */
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    .mid {
+        /* border: 2px solid brown; */
+        color: white;
+        display: block;
+        width: 500px;
+        /* margin y(top/bottom) x(left/right) */
+        margin: 20px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(192, 28, 28); */
+        color: white;
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+
+    }
+
+    .btn {
+        padding: 5px;
+        margin: 6px;
+        color: white;
+        background-color: rgb(44, 40, 40);
+        border-radius: 40px;
+    }
+
+    .btn a {
+
+        color: white;
+        font-size: 10px;
+        /* font-family: 'Fredoka One', cursive; */
+        text-decoration: none;
+    }
+
+    .btn a:hover {
+        color: rgb(209, 198, 198);
+    }
+
+    .left img {
+        width: 46px;
+    height: 41px;
+        /* filter: invert(100%); */
+        /*when the image is black and want to comnvert it into white thwn this will help to invert it */
+
+    }
+
+    .left div {
+        font-size: 12px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        /* this will help to make list into a line */
+
+        display: inline-block;
+        font-size: 16px;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .container {
+        border: 2px solid blue;
+        margin: 135px 83px;
+        padding: 55px;
+        color: white;
+        width: 30%;
+        border-radius: 30px;
+        border-color: white;
+
+    }
+
+    .container h1 {
+        text-align: center;
+        margin: 0px 29px 40px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        margin: 4px;
+        border: 2px solid gray;
+        border-radius: 5px;
+    }
+
+    .container button {
+        display: block;
+        width: 20%;
+        margin: 20px 0px;
+    }
+
+
+
+    .container button:hover {
+        color: gray;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/knowme logo.png" alt="">
+            <div>knowme?</div>
+        </div>
+        <!-- mid for nav -->
+        <div class="mid">
+            <ul class="navbar">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Dance</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right for search -->
+        <div class="right">
+            <button class="btn"><a href="#">youtube channel</a></button><button class="btn"><a
+                    href="#">instagram</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best dance class</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                Name: <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                Age: <input type="text" name="" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                Gender: <input type="text" name="" placeholder="enter your gender">
+            </div>
+            <div class="form-group">
+                experience: <input type="text" name="" placeholder="enter your experinece">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
